@@ -1,13 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url(//db.onlinewebfonts.com/c/736cf5b08b01082a3645e14038868e20?family=Krungthep);
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  @apply bg-purple-600  text-white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Top Left Corner of Page (Brand and Nav) */
+
+/* Brand/Logo Name*/
+.logo-name{
+  @apply text-7xl mb-5 larger1:text-9xl;
+}
+
+/* Navigation List */
+.navigation{
+  @apply flex flex-col;
+}
+
+/*Navigation elements under logo*/
+.nav-drop{
+  @apply font-krungthep text-xl mb-2 larger1:text-3xl;
+}
+
+/* Helvetica Font */
+h1 { font-family: Helvetica; font-size: 16px; font-style: italic; font-variant: normal; font-weight: 100; line-height: 16px; } h3 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
+
+
+/* REACT ROUTE PANELS */
+
+/* About Paragraph */
+.about-text{
+  @apply w-64 float-right font-krungthep text-lg pr-10 mr-7;
+}
+
+/* Project Panel */
+.project-panel{
+  @apply float-right flex flex-row larger2:pt-20;
+}
+
+/* Titles of projects */
+.project-name{
+  @apply text-6xl text-center /*hover:text-qxl duration-150*/ larger1:text-7xl;
+}
+
+/* Text underneath project title */
+.project-text{
+  @apply font-krungthep mb-8 text-center text-xl;
+}
+
+/* Scrolldown that holds all visible projects */
+.scrolldown-panel{
+  @apply h-96 overflow-hidden overflow-y-scroll mr-3 border-y-2;
+}
+
+/* Div holding the image */
+.image-panel{
+  @apply float-left mr-32 mobile1:hidden tablet1:hidden;
+}
+
+/* The actual image */
+.the-image{
+  @apply h-96 w-96 relative;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/*Contact Page*/
+.contact-panel{
+  @apply float-right mr-16 mt-4;
 }
