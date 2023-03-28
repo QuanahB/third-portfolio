@@ -1,2 +1,1 @@
-1. Change mobile spacing for navigation
-2. Decide on whether to keep to slightly change navigation font (Style or size?)
+1. Make sure all links on project panel redirect properly
