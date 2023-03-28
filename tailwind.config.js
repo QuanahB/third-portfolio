@@ -6,10 +6,17 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        'krungthep': ['Krungthep','sans-serif']
+        'krungthep': ['Krungthep','sans-serif'],
+        'montserrat': ['Montserrat','sans-serif'],
       },
       fontSize:{
         qxl: '3.9rem',
+        pxl:['1.23rem',{
+          lineHeight: '1.45rem',
+        }],
+        txl:['1.20rem',{
+          lineHeight: '1.5rem',
+        }],
       },
     },
     screens:{

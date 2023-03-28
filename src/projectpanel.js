@@ -8,27 +8,27 @@ export default function ProjectPanel(){
     function testHover(n){
         if(n === 1){
             changeClasses(["the-image z-10"]);
-            changeImage("/images/sketch.jpeg");
+            changeImage("/images/Brentwood.png");
         }
         if(n === 2){
             changeClasses(["the-image z-10"]);
-            changeImage("/images/hundreds.jpeg");
+            changeImage("/images/CloseToTen.png");
         }
         if(n === 3){
             changeClasses(["the-image z-10"]);
-            changeImage("/images/hundreds.jpeg");
+            changeImage("/images/calc2.png"); //Must change to Calc Image
         }
         if(n === 4){
             changeClasses(["the-image z-10"]);
-            changeImage("/images/hundreds.jpeg");
+            changeImage("/images/anais.png");
         }
         if(n === 5){
             changeClasses(["the-image z-10"]);
-            changeImage("/images/hundreds.jpeg");
+            changeImage("/images/thalyta.png");
         }
         if(n === 6){
             changeClasses(["the-image z-10"]);
-            changeImage("/images/hundreds.jpeg");
+            changeImage("/images/Eric.png");
         }
         if(n === 7){
             changeClasses(["the-image z-10"]);
@@ -40,11 +40,7 @@ export default function ProjectPanel(){
         }
         if(n === 9){
             changeClasses(["the-image z-10"]);
-            changeImage("/images/hundreds.jpeg");
-        }
-        if(n === 2){
-            changeClasses(["the-image z-10"]);
-            changeImage("/images/hundreds.jpeg");
+            changeImage("/images/git3.png");
         }
     }
 
@@ -71,25 +67,31 @@ export default function ProjectPanel(){
                         <p className="project-text">Game</p>
                     </li>
                 </ul>
-                <ul>
+                <ul onMouseOver={() => testHover(3)} onMouseLeave={() => testMouseOut()}>
                     <li>
                         <h1 className="project-name">My Calulator</h1>
                         <p className="project-text">React App</p>
                     </li>
                 </ul>
-                <ul>
+                <ul onMouseOver={() => testHover(4)} onMouseLeave={() => testMouseOut()}>
                     <li>
                         <h1 className="project-name">Anais</h1>
                         <p className="project-text">Personal Portfolio</p>
                     </li>
                 </ul>
-                <ul>
+                <ul onMouseOver={() => testHover(5)} onMouseLeave={() => testMouseOut()}>
                     <li>
-                        <h1 className="project-name">Novelty</h1>
-                        <p className="project-text">React App</p>
+                        <h1 className="project-name">Thalyta</h1>
+                        <p className="project-text">Photography Portfolio</p>
                     </li>
                 </ul>
-                <ul>
+                <ul onMouseOver={() => testHover(6)} onMouseLeave={() => testMouseOut()}>
+                    <li>
+                        <h1 className="project-name">Eric Mackey</h1>
+                        <p className="project-text">Art Portfolio</p>
+                    </li>
+                </ul>
+                <ul onMouseOver={() => testHover(9)} onMouseLeave={() => testMouseOut()}>
                     <li>
                         <h1 className="project-name">Github</h1>
                         <p className="project-text">Open Source</p>

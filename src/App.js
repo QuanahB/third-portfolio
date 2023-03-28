@@ -13,8 +13,8 @@ function App() {
     <h1 className='logo-name'>Quanah B.</h1>
     <ul className='navigation'>
       <Link className='nav-drop' to='/'>About</Link>
-      <Link className='nav-drop' to='/about'>Projects</Link>
-      <Link className='nav-drop' to='/contact'>Contact</Link>
+      <Link className='nav-drop' to='/projects'>Projects</Link>
+      <Link className='nav-drop pb-4' to='/contact'>Contact</Link>
     </ul>
     <Switch>
     <Route exact path='/'>
@@ -28,7 +28,7 @@ function App() {
     </motion.div>
     </div>
     </Route>
-    <Route exact path='/about'>
+    <Route exact path='/projects'>
       <motion.div className='project-panel' initial={{ opacity: 0}} animate={{ opacity: 1}} transition={{ duration: 0.6 }}>
       <ProjectPanel/>
       </motion.div>

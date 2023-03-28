@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @import url(https://db.onlinewebfonts.com/c/736cf5b08b01082a3645e14038868e20?family=Krungthep);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap);
 
 body {
   @apply bg-purple-600  text-white;
@@ -12,28 +13,28 @@ body {
 
 /* Brand/Logo Name*/
 .logo-name{
-  @apply text-7xl mb-5 larger1:text-9xl;
+  @apply text-7xl mb-8 larger1:text-9xl mobile1:text-6xl font-montserrat;
 }
 
 /* Navigation List */
 .navigation{
-  @apply flex flex-col;
+  @apply flex flex-col space-y-7 mobile1:space-y-4;
 }
 
 /*Navigation elements under logo*/
 .nav-drop{
-  @apply font-krungthep text-xl mb-2 larger1:text-3xl;
+  @apply /*font-krungthep*/ text-xl larger1:text-3xl font-semibold;
 }
 
 /* Helvetica Font */
-h1 { font-family: Helvetica; font-size: 16px; font-style: italic; font-variant: normal; font-weight: 100; line-height: 16px; } h3 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
+/*h1 { font-family: Helvetica; font-size: 16px; font-style: italic; font-variant: normal; font-weight: 100; line-height: 16px; } h3 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }*/
 
 
 /* REACT ROUTE PANELS */
 
 /* About Paragraph */
 .about-text{
-  @apply w-64 float-right font-krungthep text-lg pr-10 mr-7;
+  @apply w-64 float-right /*font-krungthep*/ /*text-lg*/ pr-10 mr-7 text-pxl mobile1:text-txl;
 }
 
 /* Project Panel */
@@ -43,12 +44,12 @@ h1 { font-family: Helvetica; font-size: 16px; font-style: italic; font-variant: 
 
 /* Titles of projects */
 .project-name{
-  @apply text-6xl text-center /*hover:text-qxl duration-150*/ larger1:text-7xl;
+  @apply text-6xl text-center /*hover:text-qxl duration-150*/ larger1:text-7xl font-montserrat;
 }
 
 /* Text underneath project title */
 .project-text{
-  @apply font-krungthep mb-8 text-center text-xl;
+  @apply /*font-krungthep*/ mb-8 text-center text-xl;
 }
 
 /* Scrolldown that holds all visible projects */
@@ -63,7 +64,7 @@ h1 { font-family: Helvetica; font-size: 16px; font-style: italic; font-variant: 
 
 /* The actual image */
 .the-image{
-  @apply h-96 w-96 relative;
+  @apply h-96 w-96 relative border-4 border-white;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -81,3 +82,6 @@ h1 { font-family: Helvetica; font-size: 16px; font-style: italic; font-variant: 
 .contact-panel{
   @apply float-right mr-16 mt-4;
 }
+
+/*Courrier New*/
+p,.nav-drop { font-family: "Courier New"; font-style: normal; font-variant: normal; line-height: 20px; }

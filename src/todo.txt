@@ -1,6 +1,2 @@
-1.Make changes for image panel for larger screen sizes/fix hover effect on project name 
-  for larger screen sizes 
-2. Make changes for all tablet sizes(Can probably extend mobile change to tablet)
-3.Add all proper images associated with each project
-4. Deploy project with netlify
-5. Connect with legit web domain to COMPLETE
+1. Change mobile spacing for navigation
+2. Decide on whether to keep to slightly change navigation font (Style or size?)

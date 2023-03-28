@@ -4,7 +4,7 @@ export default function ContactPage(){
     return(
         <>
         <motion.div className='contact-panel' initial={{ opacity: 0}} animate={{ opacity: 1}} transition={{ duration: 0.6 }}>
-        <h1 className="text-6xl">Contact Form</h1>
+        <h1 className="text-6xl font-montserrat">Contact Form</h1>
         <form class="w-full max-w-sm flex flex-col" action="https://formspree.io/f/mwkjqrvq" method="POST">
             <div class="flex items-center border-b border-white py-2">
                 <input class="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-none" type="email" name="email" placeholder="Email" aria-label="Full name" />
