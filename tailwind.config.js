@@ -6,7 +6,6 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        'krungthep': ['Krungthep','sans-serif'],
         'montserrat': ['Montserrat','sans-serif'],
       },
       fontSize:{
